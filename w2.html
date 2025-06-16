@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter some text:</label>
+    <textarea id="ta" rows="7" cols="70"></textarea>
+    <input type="submit" value="submit" onclick="count()" >
+
+    <script>
+        function count()
+        {
+        const str=document.getElementById("ta").value;
+        var result="";
+        result+="Number of characters:"+str.length+'\n';
+        var words=str.split(' ');
+        result+="Number of words:"+(words.length+1)+'\n';
+        var lines=str.split('\n');
+        result+="Number of lines:"+lines.length+'\n';
+        alert(result);
+        }
+    </script>
+</body>
+</html>

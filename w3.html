@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Know about countries and their capital</h2>
+    <select id="countries" onChange="showcapital(this)">
+        <option value="---">Select a country</option>
+        <option value="delhi">india</option>
+        <option value="A">B</option>
+        <option value="C">D</option>
+    </select>
+    <p id="capital"></p>
+    <script>
+        function showcapital(select)
+        {
+            const cap=select.value;
+            document.getElementById("capital").innerHTML= `capital: ${cap}`;
+        }
+    </script>
+</body>
+</html>

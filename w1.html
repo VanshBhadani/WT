@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter a number:</label>
+    <input type="text" id="number">
+    <input type="text" id="words" readonly>
+
+
+    <script>
+    const num=document.getElementById("number");
+    const word=document.getElementById("words");
+    const ones=["","one","two","three","four","five","six","seven","eight","nine"];
+    const teens=["ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"];
+    const tens=["","","twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninety"];
+
+    num.addEventListener('input',() => {
+        const n=parseInt(num.value,10);
+        if(isNaN(n) || n<0 || num>999)
+        {
+            word.value="invalid";
+             return;
+        }
+        word.value=convert(n);
+    });
+
+    function convert(n)
+    {
+        if(n==0)
+    {
+        w.value="Enter a number other than 0";
+    }
+    let w="";
+    if(n>=100)
+    {
+        w+=ones[Math.floor(n/100)]+ "Hundred";
+        n%=100;
+    }
+
+    if(n>=10 && n<20)
+    {
+        w+=teens[n-10];
+    }
+    else{
+        if(n>=20)
+    {
+        w+=tens[Math.floor(n/10)]+ " ";
+        n%=10;
+    }
+        w+=ones[n];
+    }
+    return w.trim();
+    }
+    </script>
+</body>
+</html>
