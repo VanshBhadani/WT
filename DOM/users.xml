@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <userid>S001</userid>
+        <name>John Doe</name>
+        <gender>Male</gender>
+        <marks>85</marks>
+    </student>
+    <student>
+        <userid>S002</userid>
+        <name>Jane Doe</name>
+        <gender>Female</gender>
+        <marks>90</marks>
+    </student>
+    <student>
+        <userid>S003</userid>
+        <name>Bob Smith</name>
+        <gender>Male</gender>
+        <marks>78</marks>
+    </student>
+    <student>
+        <userid>S004</userid>
+        <name>Alice Johnson</name>
+        <gender>Female</gender>
+        <marks>92</marks>
+    </student>
+</students>

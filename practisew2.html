@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <select id = "comtry" onchange="chan(this)">
+            <option value="---">Select option</option>
+            <option value="delhi">India</option>
+            <option value="seoul"> Korea</option>
+            <option value="washin">usa</option>
+        </select>
+        <p id = "capital"></p>
+
+        <script>
+            function chan(select)
+            {
+                const cap = select.value;
+                document.getElementById("capital").innerHTML = `capital: ${cap}`;
+            }
+
+        </script>
+
+    </body>
+</html>
